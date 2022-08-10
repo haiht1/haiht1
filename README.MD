@@ -1,12 +1,19 @@
 ###### Webmin
+
 # Cài Webmin
 
 # B1: Truy cập: 
 
 **https://www.webmin.com/rpm** 
 
+### Để có thể thực thi lệnh wget cần cài công cụ này.Nhập lệnh sau để cài
+
+`yum install wget`
+
 # B2: Tren linux nhập lệnh dưới để tạo file:
+
 `vi /etc/yum.repos.d/webmin.repo`
+
 # Nhập nội dung sau :
 
 `[Webmin]`

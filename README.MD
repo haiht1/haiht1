@@ -1,11 +1,11 @@
 ###### Webmin
-##Cai Webmin
+# Cai Webmin
 
-#Buoc 1: Truy cập: 
+# Buoc 1: Truy cập: 
 
 **https://www.webmin.com/rpm** 
 
-#Buoc 2: Tren linux nhap lenh duoi de tao file:
+# Buoc 2: Tren linux nhap lenh duoi de tao file:
 'vi /etc/yum.repos.d/webmin.repo'
 Nhap noi dung nhu sau:
 
@@ -19,11 +19,11 @@ gpgcheck=1'''
 
 Luu va thoat bang lenh :x!
 
-Buoc 3: Cai key GPG bang lenh duoi:
+# Buoc 3: Cai key GPG bang lenh duoi:
 
 '''wget https://download.webmin.com/jcameron-key.asc
 rpm --import jcameron-key.asc'''
 
-Buoc4: Nhap lenh sau de cai webmin
+# Buoc4: Nhap lenh sau de cai webmin
 '''yum install perl
    yum install webmin'''

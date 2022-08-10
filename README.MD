@@ -1,13 +1,13 @@
 ###### Webmin
-# Cai Webmin
+# Cài Webmin
 
-# Buoc 1: Truy cập: 
+# B1: Truy cập: 
 
 **https://www.webmin.com/rpm** 
 
-# Buoc 2: Tren linux nhap lenh duoi de tao file:
+# B2: Tren linux nhập lệnh dưới để tạo file:
 `vi /etc/yum.repos.d/webmin.repo`
-Nhap noi dung nhu sau:
+# Nhập nội dung sau :
 
 `[Webmin]`
 
@@ -23,15 +23,15 @@ Nhap noi dung nhu sau:
 
 `gpgcheck=1`
 
-# Luu va thoat bang lenh: **:x!**
+# Lưu va thoát bằng lệnh: **:x!**
 
-# Buoc 3: Cai key GPG bang lenh duoi:
+# B3: Cài key GPG băng lệnh dưới:
 
 `wget https://download.webmin.com/jcameron-key.asc`
 
 `rpm --import jcameron-key.asc`
 
-# Buoc4: Nhap lenh sau de cai webmin
+# B4: Nhập lệnh sau để cài webmin
    `yum install perl`
    
    `yum install webmin`

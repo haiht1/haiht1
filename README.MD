@@ -10,7 +10,7 @@
 
 `yum install wget`
 
-# B2: Tren linux nhập lệnh dưới để tạo file:
+# B2: Trên linux nhập lệnh dưới để tạo file:
 
 `vi /etc/yum.repos.d/webmin.repo`
 
@@ -30,9 +30,9 @@
 
 `gpgcheck=1`
 
-# Lưu va thoát bằng lệnh: **:x!**
+# Lưu và thoát bằng lệnh: **:x!**
 
-# B3: Cài key GPG băng lệnh dưới:
+# B3: Cài key GPG bằng lệnh dưới:
 
 `wget https://download.webmin.com/jcameron-key.asc`
 
@@ -42,3 +42,18 @@
    `yum install perl`
    
    `yum install webmin`
+
+# B5 Để khởi động webmin dùng lệnh:
+
+   `# service webmin start`
+   
+#   Để bật Webmin khi khởi động hệ thống, hãy sử dụng lệnh sau:
+
+   `# chkconfig webmin on`
+ 
+# Hoặc 
+
+`systemctl webmin.service`
+
+ 
+   

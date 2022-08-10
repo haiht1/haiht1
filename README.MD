@@ -43,7 +43,7 @@
    
    `yum install webmin`
 
-### B5 Để khởi động webmin dùng lệnh:
+### B5: Để khởi động webmin dùng lệnh:
 
    `# service webmin start`
    
@@ -51,9 +51,21 @@
 
    `# chkconfig webmin on`
  
-#### Hoặc 
+#### Hoặc:
 
 `systemctl webmin.service`
 
- 
+#### B6: Để có thể sử dụng webmin ta cần có 1 trình duyệt
+
+##### Ở đây tôi cài Chrome.Để tải gói cài đặt ta sử dụng lệnh
+
+`wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm`
+
+#### Sau đó dùng lệnh sau để cài đặt:
+
+`yum install ./google-chrome-stable_current_x86_64.rpm`
+
+
+
+
    

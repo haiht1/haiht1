@@ -1,3 +1,31 @@
+# Đổi port trên SSH 22-2022
+
+#### Dùng lệnh Vim để mở file chứa cài đặt ssh
+
+`sudo nano /etc/ssh/sshd_config`
+
+##### Đổi port 22-> 2022.Sau đó lưu lại.
+
+# Chuyển đổi xác thực SSH bằng Key thay cho mật khẩu
+
+## Dùng lệnh dưới để tạo key rsa
+
+`sudo ssh-keygen -t rsa'
+
+## Hệ thống sẽ hỏi nơi Lưu key điền đường dẫn lưu hoặc Nhấn enter để lưu theo mặc định
+
+## Hệ thống sẽ yêu cầu nhập Passphase .Nhấn enter để rỗng
+
+## Sau đó hệ thống sẽ sinh ra 2 key trên hệ thống là Private Key và Public Key:
+
+## trên máy mình 2 key đó sẽ nằm trong mục /root/ .ssh/id_rsa. Nhớ lưu lại 2 key này để sử dụng
+
+
+
+
+
+
+
 # Webmin
 
 ## Cài Virtualmin
@@ -14,7 +42,7 @@
 
 `sudo wget wget http://software.virtualmin.com/gpl/scripts/install.sh`
 
-#### Lệnh đăt hostname cho Vituralmin:
+#### Lệnh đặt hostname cho Vituralmin:
 
 `sudo hostnamectl set-hostname demo.how2shout.com`
 

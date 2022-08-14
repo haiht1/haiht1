@@ -26,6 +26,10 @@
 
 
 
+# chỉ cho ip tòa nhà Núi thành truy cập ssh: 
+
+ iptables -I INPUT -p tcp -s xxx.xxx.xxx.xxx -m tcp --dport 22 -j ACCEPT`
+
 # Webmin
 
 ## Cài Virtualmin

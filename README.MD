@@ -14,34 +14,19 @@
 
 `sudo wget wget http://software.virtualmin.com/gpl/scripts/install.sh`
 
-#### Nhập nội dung sau :
+#### Lệnh đăt hostname cho Vituralmin:
 
-`[Webmin]`
+`sudo hostnamectl set-hostname demo.how2shout.com`
 
-`name=Webmin Distribution Neutral`
+#### Thay demo.how2shout.com bằng tên miền của bạn
 
-`#baseurl=https://download.webmin.com/download/yum`
+### Gán quyền thực thi cho tệp install.sh
 
-`mirrorlist=https://download.webmin.com/download/yum/mirrorlist`
+`sudo chmod a+x install.sh`
 
-`enabled=1`
+### Chạy lệnh cài đặt Webmin và Virtual:
 
-`gpgkey=https://download.webmin.com/jcameron-key.asc`
-
-`gpgcheck=1`
-
-#### Lưu và thoát bằng lệnh: **:x!**
-
-### B3: Cài key GPG bằng lệnh dưới:
-
-`wget https://download.webmin.com/jcameron-key.asc`
-
-`rpm --import jcameron-key.asc`
-
-### B4: Nhập lệnh sau để cài webmin
-   `yum install perl`
-   
-   `yum install webmin`
+   `sudo ./install.sh`
 
 ### B5: Để khởi động webmin dùng lệnh:
 

@@ -1,18 +1,18 @@
 # Webmin
 
-## Cài Webmin
+## Cài Virtualmin
 
-### B1: Truy cập: 
+### Nhập lệnh để update
 
-**https://www.webmin.com/rpm** 
+`sudo apt update`
 
-#### Để có thể thực thi lệnh wget cần cài công cụ này.Nhập lệnh sau để cài
+#### Để có thể thực thi lệnh wget. Nếu chưa có cần cài công cụ này.Nhập lệnh sau để cài
 
-`yum install wget`
+`sudo apt install wget`
 
-### B2: Trên linux nhập lệnh dưới để tạo file:
+### Nhập lệnh bên dưới để tải Script Vitualmin
 
-`vi /etc/yum.repos.d/webmin.repo`
+`sudo wget wget http://software.virtualmin.com/gpl/scripts/install.sh`
 
 #### Nhập nội dung sau :
 

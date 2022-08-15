@@ -18,15 +18,12 @@
 
 ## Sau đó hệ thống sẽ sinh ra 2 key trên hệ thống là Private Key và Public Key:
 
-## trên máy mình 2 key đó sẽ nằm trong mục /root/ .ssh/id_rsa. Nhớ lưu lại 2 key này để sử dụng
+## Trên máy mình 2 key đó sẽ nằm trong mục /root/ .ssh/id_rsa. Nhớ lưu lại 2 key này để sử dụng
 
 
 
 
-
-
-
-# chỉ cho ip tòa nhà Núi thành truy cập ssh: 
+# Chỉ cho ip tòa nhà Núi thành truy cập ssh: 
 
  `sudo iptables -I INPUT -p tcp -s xxx.xxx.xxx.xxx -m tcp --dport 22 -j ACCEPT`
  

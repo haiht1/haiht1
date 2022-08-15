@@ -103,6 +103,24 @@
 
 `sudo ufw delete 7`
 
+## Mở cổng theo phạm vi 
 
+`sudo ufw allow 35000:35999/tcp`
 
+## Đóng cổng theo phạm vi 
 
+`sudo ufw deny 35000:35999/tcp`
+
+## Cho phép IP truy cập 
+
+`sudo ufw allow from 103.15.48.131`
+
+## Từ chối IP truy cập 
+
+`sudo ufw deny from 103.15.48.131`
+
+## Nếu cần mở IPv6 trên UFW
+
+`sudo vim /etc/default/ufw`
+
+### Sau đó đổi IPV6=no -> IPV6=yes

@@ -21,8 +21,6 @@
 ## Trên máy mình 2 key đó sẽ nằm trong mục /root/ .ssh/id_rsa. Nhớ lưu lại 2 key này để sử dụng
 
 
-
-
 # Chỉ cho ip tòa nhà Núi thành truy cập ssh: 
 
  `sudo iptables -I INPUT -p tcp -s xxx.xxx.xxx.xxx -m tcp --dport 22 -j ACCEPT`
@@ -68,6 +66,20 @@
 ## Hệ thống sẽ hỏi bạn nhập y 2 lần 
 
 ## Đợi hệ thống tải và cài đặt các package hoàn tất.
+
+## Để chạy Webmin cần 1 trình duyệt
+
+## Nhập lệnh để update hệ thống
+
+`sudo apt update && apt upgrade -y`
+
+## Cài GUI cho linux
+
+`sudo apt install xubuntu-dekstop -y`
+
+### Nếu có thông báo xuất hiện trong quá trình cài đặt, chọn yes hoặc enter và chọn gdm3
+
+
 
 # Cấu hình firewall với UFW để giới hạn các cổng được phép kết nối
 

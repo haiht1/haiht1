@@ -124,3 +124,19 @@
 `sudo vim /etc/default/ufw`
 
 ### Sau đó đổi IPV6=no -> IPV6=yes
+
+# Thay đổi múi giờ 
+
+## Nhập lệnh để xem định dạng thời hiện tại trên hệ thống
+
+`sudo timedatectl`
+
+## Để xem danh sách múi giờ
+
+`sudo timedatectl list-timezones`
+
+## Thay đổi timezone
+
+`sudo timedatectl set-timezone Asia/Ho_Chi_Minh`
+
+#

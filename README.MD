@@ -135,7 +135,7 @@
 
 ## Recheck and refresh configuration : hệ thống sẽ kiểm tra lại các thông tin và các cài đặt và làm reset lại 
 
-#Tạo 1 Virtualmin Server:
+# Tạo 1 Virtualmin Server:
 
 ## Chọn Create Server để tạo mới Virtual Server
 

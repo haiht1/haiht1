@@ -22,6 +22,16 @@
 
 ## Trên máy mình 2 key đó sẽ nằm trong mục /root/ .ssh/id_rsa. Nhớ lưu lại 2 key này để sử dụng
 
+## Private Key chứa trong file ~/.ssh/id_rsa và Public Key chứa trong file ~/.ssh/id_rsa.pub
+
+## Mở file config của SSH Service ra /etc/ssh/sshd_config và điều chỉnh thành
+
+`PubkeyAuthentication yes`
+`AuthorizedKeysFile .ssh/authorized_keys`
+
+## Lưu Public key trên máy user theo đường dẫn /home/abc/.ssh/authorized_keys(Linux)
+
+## Và theo đường dẫn C:\Users\abc\.ssh\authorized_keys trên (windows)
 
 
 

@@ -5,7 +5,7 @@
 
 ### - Dùng lệnh Vim để mở file chứa cài đặt ssh
 
-***`sudo vim /etc/ssh/sshd_config ` ***
+** `sudo vim /etc/ssh/sshd_config ` **
 
 ### - Đổi port 22-> 2022.Sau đó lưu lại.
 

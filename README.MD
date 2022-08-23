@@ -3,114 +3,104 @@
 
 ## I.Đổi port trên SSH 22 -> 2022
 
-### - Dùng lệnh Vim để mở file chứa cài đặt ssh
+###  1.Dùng lệnh Vim để mở file chứa cài đặt ssh
 
-` ** sudo vim /etc/ssh/sshd_config ** `
+`sudo vim /etc/ssh/sshd_config`
 
-### - Đổi port 22-> 2022.Sau đó lưu lại.
+###  2.Đổi port 22-> 2022.Sau đó lưu lại.
 
 
-## Chuyển đổi xác thực SSH bằng Key thay cho mật khẩu
+## II.Chuyển đổi xác thực SSH bằng Key thay cho mật khẩu
 
-## Dùng lệnh dưới để tạo key rsa
+###  1.Dùng lệnh dưới để tạo key rsa
 
 `sudo ssh-keygen -t rsa`
 
-## Hệ thống sẽ hỏi nơi Lưu key điền đường dẫn lưu hoặc Nhấn enter để lưu theo mặc định
+###  2.Hệ thống sẽ hỏi nơi Lưu key điền đường dẫn lưu hoặc Nhấn enter để lưu theo mặc định
 
-## Hệ thống sẽ yêu cầu nhập Passphase .Nhấn enter để rỗng
+###  3.Hệ thống sẽ yêu cầu nhập Passphase .Nhấn enter để rỗng
 
-## Sau đó hệ thống sẽ sinh ra 2 key trên hệ thống là Private Key và Public Key:
+###  4.Sau đó hệ thống sẽ sinh ra 2 key trên hệ thống là Private Key và Public Key:
 
-## Trên máy mình 2 key đó sẽ nằm trong mục /root/ .ssh/id_rsa. Nhớ lưu lại 2 key này để sử dụng
+###  5.Trên máy mình 2 key đó sẽ nằm trong mục /root/ .ssh/id_rsa. Nhớ lưu lại 2 key này để sử dụng
 
-## Private Key chứa trong file ~/.ssh/id_rsa và Public Key chứa trong file ~/.ssh/id_rsa.pub
+###  6.Private Key chứa trong file ~/.ssh/id_rsa và Public Key chứa trong file ~/.ssh/id_rsa.pub
 
-## Mở file config của SSH Service ra /etc/ssh/sshd_config và điều chỉnh thành
+###  7.Mở file config của SSH Service ra /etc/ssh/sshd_config và điều chỉnh thành
 
 `PubkeyAuthentication yes`
 `AuthorizedKeysFile .ssh/authorized_keys`
 
-## Lưu Public key trên máy user theo đường dẫn /home/abc/.ssh/authorized_keys(Linux)
-
-## Và theo đường dẫn C:\Users\abc\.ssh\authorized_keys trên (windows)
+###  8.Lưu Private key trên máy user theo đường dẫn /home/abc/.ssh/authorized_keys(Linux) Và theo đường dẫn C:\Users\abc\.ssh\authorized_keys trên (windows)
 
 
 
-# Chỉ cho ip tòa nhà Núi thành truy cập ssh: 
+# III.Chỉ cho ip tòa nhà Núi thành truy cập ssh: 
 
- `sudo iptables -I INPUT -p tcp -s xxx.xxx.xxx.xxx -m tcp --dport 22 -j ACCEPT`
+ `sudo iptables -I INPUT -p tcp -s **118.69.62.113** -m tcp --dport 22 -j ACCEPT`
  
  
-# Để đổi hostname
+## IV.Để đổi hostname
  
-## Sử dụng lệnh vi mở tập tin
+###  1.Sử dụng lệnh vi mở tập tin
  
  `vi /etc/hosts` 
  
- 
-#  Sau đó đổi hostname mới mà bạn muốn.Sau đó lưu và thoát.
+###  2.Sau đó đổi hostname mới mà bạn muốn.Sau đó lưu và thoát.
 
-# Webmin
 
-# Cài Virtualmin
+## V.Cài Webmin & Virtualmin
 
-## Nhập lệnh để update
+###  1.Nhập lệnh để update
 
 `sudo apt update`
 
-## Để có thể thực thi lệnh wget. Nếu chưa có cần cài công cụ này.Nhập lệnh sau để cài
+###   1.2.Để có thể thực thi lệnh wget. Nếu chưa có cần cài công cụ này.Nhập lệnh sau để cài
 
 `sudo apt install wget`
 
-### Nhập lệnh bên dưới để tải Script Vitualmin
+###  2.Nhập lệnh bên dưới để tải Script Vitualmin
 
 `sudo wget wget http://software.virtualmin.com/gpl/scripts/install.sh`
 
-## Lệnh đặt hostname cho Vituralmin:
+###  2.2Lệnh đặt hostname cho Vituralmin:
 
-`sudo hostnamectl set-hostname xxx.xxx`
+`sudo hostnamectl set-hostname haiht.tk`
 
-## Thay xxx.xxx bằng tên miền của bạn
-
-### Gán quyền thực thi cho tệp install.sh
+###  3.Gán quyền thực thi cho tệp install.sh
 
 `sudo chmod a+x install.sh`
 
-### Chạy lệnh cài đặt Webmin và Virtual:
+###  4.Chạy lệnh cài đặt Webmin và Virtual:
 
    `sudo ./install.sh`
    
-## Hệ thống sẽ hỏi bạn nhập y 2 lần 
+###  4.1.Hệ thống sẽ hỏi bạn nhập y 2 lần 
 
-## Đợi hệ thống tải và cài đặt các package hoàn tất.
-
-
-# Cấu hình Vituralmin
+###  5.Đợi hệ thống tải và cài đặt các package hoàn tất.
 
 
+## Cấu hình Vituralmin
 
-## Trên máy user, để vào được giao diện webmin: mở trình duyệt nhập đường dẫn:
 
-`xxx.xxx.xxx.xxx:10000` `192.168.75.131:10000`
 
-## Sẽ xuất hiện giao diện đăng nhập webmin
+###  1.Trên máy user, để vào được giao diện webmin: mở trình duyệt nhập đường dẫn:
 
-## Dùng user và password(mặc định là tài khoản và password user root để đăng nhập
+`192.168.75.131:10000`
 
-## Sau đó bắt đầu cấu hình cho virtualmin
+###  2.Sẽ xuất hiện giao diện đăng nhập Webmin
 
-## Click Next
+###  3.Dùng user và password(mặc định là tài khoản và password user root để đăng nhập
 
-## Mục 1 : 
+###  4.Sau đó bắt đầu cấu hình cho Virtualmin
 
-### Preload Libraries :( tải trước thư viện) chọn có nếu RAM trên 2GB
+### Click Next
+ 
+### 1.Preload Libraries :( tải trước thư viện) chọn có nếu RAM trên 2GB
 
-### Run email domain look up : máy chủ tra cứu tên  miền
-
-## Mục 2 : 
-
-### Scan Viruss với ClAV : bật quét virus 
+### 1.1Run email domain look up : máy chủ tra cứu tên  miền
+ 
+### 2.Scan Viruss với ClAV : bật quét virus 
 
 
 ## Mục 3 :

@@ -5,17 +5,16 @@
 
 ### - Dùng lệnh Vim để mở file chứa cài đặt ssh
 
-`sudo nano /etc/ssh/sshd_config`
+***`sudo vim /etc/ssh/sshd_config ` ***
 
 ### - Đổi port 22-> 2022.Sau đó lưu lại.
 
 
-
-# Chuyển đổi xác thực SSH bằng Key thay cho mật khẩu
+## Chuyển đổi xác thực SSH bằng Key thay cho mật khẩu
 
 ## Dùng lệnh dưới để tạo key rsa
 
-`sudo ssh-keygen -t rsa'
+`sudo ssh-keygen -t rsa`
 
 ## Hệ thống sẽ hỏi nơi Lưu key điền đường dẫn lưu hoặc Nhấn enter để lưu theo mặc định
 

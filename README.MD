@@ -1,12 +1,13 @@
-#                                                            LAB LINUX 
+#    LAB LINUX 
 
-# Đổi port trên SSH 22 -> 2022
 
-## Dùng lệnh Vim để mở file chứa cài đặt ssh
+## I.Đổi port trên SSH 22 -> 2022
+
+### - Dùng lệnh Vim để mở file chứa cài đặt ssh
 
 `sudo nano /etc/ssh/sshd_config`
 
-## Đổi port 22-> 2022.Sau đó lưu lại.
+### - Đổi port 22-> 2022.Sau đó lưu lại.
 
 
 

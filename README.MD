@@ -94,13 +94,13 @@
 
 ###  4.Sau đó bắt đầu cấu hình cho Virtualmin
 
-### Click Next
+###  5.Click Next
  
-### 1.Preload Libraries :( tải trước thư viện) chọn có nếu RAM trên 2GB
+###   5.1.Preload Libraries :( tải trước thư viện) chọn có nếu RAM trên 2GB
 
-### 1.1Run email domain look up : máy chủ tra cứu tên  miền
+###      Run email domain look up : máy chủ tra cứu tên  miền
  
-### 2.Scan Viruss với ClAV : bật quét virus 
+###   5.2.Scan Viruss với ClAV : bật quét virus 
 
 
 ## Mục 3 :

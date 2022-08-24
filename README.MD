@@ -38,6 +38,7 @@
 ## V.Cài Webmin & Virtualmin
 
 | Nhập lệnh để update | `sudo apt update` |
+|---------------------|-------------------|
 | Để có thể thực thi lệnh wget.Nhập lệnh sau để cài |`sudo apt install wget` |
 | Lệnh để tải Script Vitualmin | `sudo wget wget http://software.virtualmin.com/gpl/scripts/install.sh` |
 |Lệnh đặt hostname cho Vituralmin | `sudo hostnamectl set-hostname haiht.tk` |

@@ -18,8 +18,8 @@
 | Trên máy mình 2 key đó sẽ nằm trong mục /root/ .ssh/id_rsa | Nhớ lưu lại 2 key này để sử dụng |
 | Private Key chứa trong file ~/.ssh/id_rsa | Public Key chứa trong file ~/.ssh/id_rsa.pub |
 | Mở file config của SSH Service ra | /etc/ssh/sshd_config và điều chỉnh thành |
-| `PubkeyAuthentication | `yes` |
-| `AuthorizedKeysFile | .ssh/authorized_keys`|
+| `PubkeyAuthentication` | `yes` |
+| `AuthorizedKeysFile` | .ssh/authorized_keys`|
 | Lưu Private key trên máy user theo đường dẫn | /home/abc/.ssh/authorized_keys(Linux) C:\Users\abc\.ssh\authorized_keys trên (windows) |
 
 
@@ -37,105 +37,40 @@
 
 ## V.Cài Webmin & Virtualmin
 
-###  1.Nhập lệnh để update
-
-`sudo apt update`
-
-###   1.2.Để có thể thực thi lệnh wget. Nếu chưa có cần cài công cụ này.Nhập lệnh sau để cài
-
-`sudo apt install wget`
-
-###  2.Nhập lệnh bên dưới để tải Script Vitualmin
-
-`sudo wget wget http://software.virtualmin.com/gpl/scripts/install.sh`
-
-###  2.2Lệnh đặt hostname cho Vituralmin:
-
-`sudo hostnamectl set-hostname haiht.tk`
-
-###  3.Gán quyền thực thi cho tệp install.sh
-
-`sudo chmod a+x install.sh`
-
-###  4.Chạy lệnh cài đặt Webmin và Virtual:
-
-   `sudo ./install.sh`
-   
-###  4.1.Hệ thống sẽ hỏi bạn nhập y 2 lần 
-
-###  5.Đợi hệ thống tải và cài đặt các package hoàn tất.
-
+| Nhập lệnh để update | `sudo apt update` |
+| Để có thể thực thi lệnh wget.Nhập lệnh sau để cài |`sudo apt install wget` |
+| Lệnh để tải Script Vitualmin | `sudo wget wget http://software.virtualmin.com/gpl/scripts/install.sh` |
+|Lệnh đặt hostname cho Vituralmin | `sudo hostnamectl set-hostname haiht.tk` |
+|Gán quyền thực thi cho tệp install.sh | `sudo chmod a+x install.sh` 
+| Cài đặt Webmin và Virtual | `sudo ./install.sh` |
+| Hệ thống sẽ hỏi bạn | Nhập y 2 lần |
 
 ## Cấu hình Vituralmin
 
-
-
-###  1.Trên máy user, để vào được giao diện webmin: mở trình duyệt nhập đường dẫn:
-
-`192.168.75.131:10000`
-
-###  2.Sẽ xuất hiện giao diện đăng nhập Webmin
-
-###  3.Dùng user và password(mặc định là tài khoản và password user root để đăng nhập
-
-###  4.Sau đó bắt đầu cấu hình cho Virtualmin
-
-###  5.Click Next
- 
-###   5.1.Preload Libraries :( tải trước thư viện) chọn có nếu RAM trên 2GB
-
-###      Run email domain look up : máy chủ tra cứu tên  miền
- 
-###   5.2.Scan Viruss với ClAV : bật quét virus 
-
-
-## Mục 3 :
-
-### MySQL :chạy dữ liệu MySQL
-
-### Postpre SQL : chạy với dữ liệu Postpre SQL
-
-## Mục 4 : 
-
-### Set password MySQL: đặt mật khẩu cho My SQL
-
-## Mục 6 : 
-
-### Set password MySQL: đặt mật khẩu cho My SQL
-
-## Mục 5 : 
-
-### Config My SQL size : điều chỉnh SQL để tăng hiệu xuất (Tùy thuộc theo RAM)
-
-## Mục 7 : 
-
-## Primary Nameserver: Cấu hình DNS chọn Skip check để thiết lập sau
-
-## Mục 8 : 
-
-## Password Storage  chọn loại lưu trữ mật khẩu dạng text hoặc được mã hóa
-
-## Mục 9 :
-
-## Setup Default Virtual Server : ùy chọn tạo mới máy chủ ảo mặc định,tick chọn no sau đó sẽ tự tạo máy chủ sau
-
-## Mục 10: 
-
-## Recheck and refresh configuration : hệ thống sẽ kiểm tra lại các thông tin và các cài đặt và làm reset lại 
+| Mở trình duyệt nhập đường dẫn | `192.168.75.131:10000` |
+|-------------------------------|------------------------|
+| Sẽ xuất hiện giao diện đăng nhập Webmin | Nhập user và password(user và pwd user root) |
+| Sau đó bắt đầu cấu hình cho Virtualmin | Click Next | 
+| Preload Libraries :( tải trước thư viện)| chọn có nếu RAM trên 2GB |
+| Run email domain look up : máy chủ tra cứu tên  miền |tùy theo |
+|Scan Viruss với ClAV : bật quét virus | nên chon không |
+| MySQL :chạy dữ liệu MySQL | chọn có |
+| Postpre SQL : chạy với dữ liệu Postpre SQL | chọn không |
+| Set password MySQL | đặt mật khẩu cho My SQL |
+| Config My SQL size | điều chỉnh size SQL để tăng hiệu xuất (Tùy thuộc theo RAM) |
+| Primary Nameserver |Cấu hình DNS chọn Skip check để thiết lập sau |
+| Password Storage  chọn loại lưu trữ mật khẩu dạng text hoặc được mã hóa | chọn 1 trong 2 |
+| Setup Default Virtual Server : Tùy chọn tạo mới máy chủ ảo mặc định| chọn no sau đó sẽ tự tạo máy chủ sau |
+| Recheck and refresh configuration | hệ thống sẽ kiểm tra lại các thông tin và các cài đặt và làm reset lại |
 
 # Tạo 1 Virtualmin Server:
 
-## Chọn Create Server để tạo mới Virtual Server
-
-## Điền thông tin và điều chỉnh các mục sau:
-
-## Domain name: nhập vào tên miền đã được trỏ IP về VPS Ubuntu
-
-## Administration passwords:  hập mật khẩu đã tạo với MySQL
-
-## Administration username: họn Custom username và nhập vào tên miền 
-
-## Sau đó chọn Create Server để tạo mới Virtual Server
+| Chọn Create Server để tạo mới Virtual Server|   |
+|---------------------------------------------|---|
+| Domain name | nhập vào tên miền đã được trỏ IP về VPS |
+| Administration passwords | Nhập mật khẩu đã tạo với MySQL |
+| Administration username | Chọn Custom username và nhập vào tên miền |
+| Chọn Create Server | để tạo mới Virtual Server |
 
 # Cài Wordpress
 

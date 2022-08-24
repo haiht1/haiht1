@@ -107,4 +107,14 @@
 
 # Các lỗi đã xảy ra trong quá trình cài đặt
 
+### 1. Lỗi đăng nhập bằng SSH  
+
 img src="(https://imgur.com/rLEw1VV)"
+
+**Giải pháp phân quyền lại các đường dẫn và các tập tin chứa key**
+
+### 2. Lỗi thiếu cập nhật hoặc lỗi hệ thống thiếu các package cần thiết
+
+img src="(https://imgur.com/F5gf4vb)"
+
+**Giải pháp upadate lại hệt thống hoặc cài lại hệ điều hành nếu không khắc phục được qua update**

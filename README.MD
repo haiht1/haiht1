@@ -75,90 +75,33 @@
 
 # Cài Wordpress
 
-## Download mã nguồn wordpress tại trang:
-
-`https://wordpress.org/`
-
-## Sau khi download source cài đặt WordPress về máy, các bạn hãy upload lên theo đường dẫn như ảnh, rồi giải nén và paste hết vào thư mục /Public_html
-
-## Truy cập trên trình duyệt bằng IP VPS để bắt đầu cài Wordpress
-
-
-
-
-
-
-
-
-
+| Download mã nguồn wordpress tại trang | https://wordpress.org |
+|---------------------------------------|-----------------------|
+| Sau khi download source cài đặt WordPress & giải nén, paste hết vào thư mục | /Public_html |
+| Truy cập trên trình duyệt bằng IP VPS | để bắt đầu cài Wordpress |
 
 # Cấu hình firewall với UFW để giới hạn các cổng được phép kết nối
 
-## Sử dụng lệnh sau để xem trạng thái UFW
-
-`sudo ufw status`
-
-## Sử dụng lệnh sau để kích hoạt UFW
-
-`sudo ufw enable`
-
-## Mở cổng 
-
-`sudo ufw allow 80/tcp`
-
-## Đóng cổng
-
-`sudo ufw deny 80/tcp`
-
-## Cho phép IP truy cập đến cổng nhất định  
- 
- `sudo ufw allow from 192.168.0.1 to any port 22`
- 
-## Từ chối IP truy cập đến cổng nhất định  
-
-`sudo ufw deny from 192.168.0.1 to any port 22`
-
-## Hiện các rule đã set up theo danh sách
-
-`sudo ufw status numbered'
-
-## Xóa 1 rule
-
-`sudo ufw delete 7`
-
-## Mở cổng theo phạm vi 
-
-`sudo ufw allow 35000:35999/tcp`
-
-## Đóng cổng theo phạm vi 
-
-`sudo ufw deny 35000:35999/tcp`
-
-## Cho phép IP truy cập 
-
-`sudo ufw allow from 103.15.48.131`
-
-## Từ chối IP truy cập 
-
-`sudo ufw deny from 103.15.48.131`
-
-## Nếu cần mở IPv6 trên UFW
-
-`sudo vim /etc/default/ufw`
-
-### Sau đó đổi IPV6=no -> IPV6=yes
+| Lệnh  để xem trạng thái UFW | `sudo ufw status` |
+|-----------------------------|-------------------|
+| Sử dụng lệnh sau để kích hoạt UFW | `sudo ufw enable` |
+| Mở cổng | `sudo ufw allow 80/tcp` |
+| Đóng cổng ||`sudo ufw deny 80/tcp` |
+| Cho phép IP truy cập đến cổng nhất định | `sudo ufw allow from 192.168.0.1 to any port 22` |
+| Từ chối IP truy cập đến cổng nhất định | `sudo ufw deny from 192.168.0.1 to any port 22` |
+| Hiện các rule đã set up theo danh sách | `sudo ufw status numbered' |
+| Xóa 1 rule |`sudo ufw delete 7` |
+| Mở cổng theo phạm vi | `sudo ufw allow 35000:35999/tcp` |
+| Đóng cổng theo phạm vi |`sudo ufw deny 35000:35999/tcp` |
+| Cho phép IP truy cập | `sudo ufw allow from 103.15.48.131` |
+| Từ chối IP truy cập | `sudo ufw deny from 103.15.48.131` |
+| Nếu cần mở IPv6 trên UFW | `sudo vim /etc/default/ufw` |
+| Đổi IPV6=no -> | IPV6=yes |
 
 # Thay đổi múi giờ 
 
-## Nhập lệnh để xem định dạng thời hiện tại trên hệ thống
-
-`sudo timedatectl`
-
-## Để xem danh sách múi giờ
-
-`sudo timedatectl list-timezones`
-
-## Thay đổi timezone
-
-`sudo timedatectl set-timezone Asia/Ho_Chi_Minh`
+| Nhập lệnh để xem định dạng thời hiện tại trên hệ thống | `sudo timedatectl` |
+|--------------------------------------------------------|--------------------|
+| Để xem danh sách múi giờ | `sudo timedatectl list-timezones` |
+| Thay đổi timezone | `sudo timedatectl set-timezone Asia/Ho_Chi_Minh` |
 

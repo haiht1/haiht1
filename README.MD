@@ -66,7 +66,7 @@
 
 # Tạo 1 Virtualmin Server:
 
-| Chọn Create Server để tạo mới Virtual Server|   |
+| Chọn Create Server để tạo mới Virtual Server|
 |---------------------------------------------|---|
 | Domain name | nhập vào tên miền đã được trỏ IP về VPS |
 | Administration passwords | Nhập mật khẩu đã tạo với MySQL |

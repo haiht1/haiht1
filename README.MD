@@ -21,7 +21,7 @@
 
 
 
-# III.Chỉ cho ip tòa nhà Núi thành truy cập ssh: 
+## III.Chỉ cho ip tòa nhà Núi thành truy cập ssh: 
 
  |Lệnh set IP: | `sudo iptables -I INPUT -p tcp -s 118.69.62.113 -m tcp --dport 22 -j ACCEPT`| 
  |-------------|-----------------------------------------------------------------------------|

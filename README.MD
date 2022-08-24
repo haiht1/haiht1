@@ -107,4 +107,4 @@
 
 # Các lỗi đã xảy ra trong quá trình cài đặt
 
-<img src="[link_anh_cua_ban](https://imgur.com/rLEw1VV)">
+img src="(https://imgur.com/rLEw1VV)"

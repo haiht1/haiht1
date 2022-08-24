@@ -4,7 +4,7 @@
 ## I.Đổi port trên SSH 22 -> 2022
 
 | 1.Dùng lệnh Vim để mở file chứa cài đặt ssh | `sudo vim /etc/ssh/sshd_config` |
-
+| :----- | :---------- | :-------------- |
 ###  2.Đổi port 22-> 2022.Sau đó lưu lại.
 
 

@@ -42,7 +42,7 @@
 | Để có thể thực thi lệnh wget.Nhập lệnh sau để cài |`sudo apt install wget` |
 | Lệnh để tải Script Vitualmin | `sudo wget wget http://software.virtualmin.com/gpl/scripts/install.sh` |
 |Lệnh đặt hostname cho Vituralmin | `sudo hostnamectl set-hostname haiht.tk` |
-|Gán quyền thực thi cho tệp install.sh | `sudo chmod a+x install.sh` 
+|Gán quyền thực thi cho tệp install.sh | `sudo chmod a+x install.sh`|
 | Cài đặt Webmin và Virtual | `sudo ./install.sh` |
 | Hệ thống sẽ hỏi bạn | Nhập y 2 lần |
 

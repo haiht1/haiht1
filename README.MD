@@ -2,7 +2,7 @@
 
 ## Mục lục
 
-# XI.Các lỗi đã xảy ra trong quá trình cài đặt
+## XI.Các lỗi đã xảy ra trong quá trình cài đặt
 
 ## I.Đổi port trên SSH 22 -> 2022
 
@@ -67,7 +67,7 @@
 | Setup Default Virtual Server : Tùy chọn tạo mới máy chủ ảo mặc định| chọn no sau đó sẽ tự tạo máy chủ sau |
 | Recheck and refresh configuration | hệ thống sẽ kiểm tra lại các thông tin và các cài đặt và làm reset lại |
 
-# VII.Tạo 1 Virtualmin Server:
+## VII.Tạo 1 Virtualmin Server:
 
 | Chọn Create Server để tạo mới Virtual Server|   |
 |---------------------------------------------|---|
@@ -76,14 +76,14 @@
 | Administration username | Chọn Custom username và nhập vào tên miền |
 | Chọn Create Server | để tạo mới Virtual Server |
 
-# VIII.Cài Wordpress
+## VIII.Cài Wordpress
 
 | Download mã nguồn wordpress tại trang | https://wordpress.org |
 |---------------------------------------|-----------------------|
 | Sau khi download source cài đặt WordPress & giải nén, paste hết vào thư mục | /Public_html |
 | Truy cập trên trình duyệt bằng IP VPS | để bắt đầu cài Wordpress |
 
-# IX.Cấu hình firewall với UFW để giới hạn các cổng được phép kết nối
+## IX.Cấu hình firewall với UFW để giới hạn các cổng được phép kết nối
 
 | Lệnh  để xem trạng thái UFW | `sudo ufw status` |
 |-----------------------------|-------------------|
@@ -101,14 +101,14 @@
 | Nếu cần mở IPv6 trên UFW | `sudo vim /etc/default/ufw` |
 | Đổi IPV6=no -> | IPV6=yes |
 
-# X.Thay đổi múi giờ 
+## X.Thay đổi múi giờ 
 
 | Nhập lệnh để xem định dạng thời hiện tại trên hệ thống | `sudo timedatectl` |
 |--------------------------------------------------------|--------------------|
 | Để xem danh sách múi giờ | `sudo timedatectl list-timezones` |
 | Thay đổi timezone | `sudo timedatectl set-timezone Asia/Ho_Chi_Minh` |
 
-# XI.Các lỗi đã xảy ra trong quá trình cài đặt
+## XI.Các lỗi đã xảy ra trong quá trình cài đặt
 
 ### 1. Lỗi đăng nhập bằng SSH  
 

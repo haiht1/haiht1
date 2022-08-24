@@ -13,21 +13,14 @@
 | Dùng lệnh dưới để tạo key rsa | `sudo ssh-keygen -t rsa` |
 |-------------------------------|--------------------------|
 | Hệ thống sẽ hỏi nơi Lưu key | Điền đường dẫn hoặc Nhấn enter để lưu theo mặc định |
-
 | Hệ thống sẽ yêu cầu nhập Passphase | Nhấn enter để rỗng |
-
 | Sau đó hệ thống sẽ sinh ra 2 key trên hệ thống: | Private Key và Public Key |
-
 | Trên máy mình 2 key đó sẽ nằm trong mục /root/ .ssh/id_rsa | Nhớ lưu lại 2 key này để sử dụng |
-
-###  6.Private Key chứa trong file ~/.ssh/id_rsa và Public Key chứa trong file ~/.ssh/id_rsa.pub
-
-###  7.Mở file config của SSH Service ra /etc/ssh/sshd_config và điều chỉnh thành
-
-`PubkeyAuthentication yes`
-`AuthorizedKeysFile .ssh/authorized_keys`
-
-###  8.Lưu Private key trên máy user theo đường dẫn /home/abc/.ssh/authorized_keys(Linux) Và theo đường dẫn C:\Users\abc\.ssh\authorized_keys trên (windows)
+| Private Key chứa trong file ~/.ssh/id_rsa | Public Key chứa trong file ~/.ssh/id_rsa.pub |
+| Mở file config của SSH Service ra | /etc/ssh/sshd_config và điều chỉnh thành |
+| `PubkeyAuthentication | `yes` |
+| `AuthorizedKeysFile | .ssh/authorized_keys`|
+| Lưu Private key trên máy user theo đường dẫn | /home/abc/.ssh/authorized_keys(Linux) C:\Users\abc\.ssh\authorized_keys trên (windows) |
 
 
 

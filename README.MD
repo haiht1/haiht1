@@ -26,17 +26,14 @@
 
 # III.Chỉ cho ip tòa nhà Núi thành truy cập ssh: 
 
- `sudo iptables -I INPUT -p tcp -s **118.69.62.113** -m tcp --dport 22 -j ACCEPT`
- 
+ |Lệnh set IP: | `sudo iptables -I INPUT -p tcp -s 118.69.62.113 -m tcp --dport 22 -j ACCEPT`| 
+ |-------------|-----------------------------------------------------------------------------|
  
 ## IV.Để đổi hostname
  
-###  1.Sử dụng lệnh vi mở tập tin
- 
- `vi /etc/hosts` 
- 
-###  2.Sau đó đổi hostname mới mà bạn muốn.Sau đó lưu và thoát.
-
+| Sử dụng lệnh vi mở tập tin | `vim /etc/hosts` |
+|----------------------------|------------------|
+| Sau đó đổi hostname mới mà bạn muốn | Sau đó lưu và thoát |
 
 ## V.Cài Webmin & Virtualmin
 

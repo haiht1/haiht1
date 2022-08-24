@@ -19,7 +19,7 @@
 | Private Key chứa trong file ~/.ssh/id_rsa | Public Key chứa trong file ~/.ssh/id_rsa.pub |
 | Mở file config của SSH Service ra | /etc/ssh/sshd_config và điều chỉnh thành |
 | `PubkeyAuthentication` | `yes` |
-| `AuthorizedKeysFile` | .ssh/authorized_keys`|
+| `AuthorizedKeysFile` |  `.ssh/authorized_keys`|
 | Lưu Private key trên máy user theo đường dẫn | /home/abc/.ssh/authorized_keys(Linux) C:\Users\abc\.ssh\authorized_keys trên (windows) |
 
 

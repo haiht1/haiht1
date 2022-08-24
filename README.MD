@@ -1,9 +1,3 @@
-#    LAB LINUX 
-
-## Mục lục
-
-## XI.Các lỗi đã xảy ra trong quá trình cài đặt
-
 ## I.Đổi port trên SSH 22 -> 2022
 
 | Dùng lệnh Vim để mở file chứa cài đặt ssh | `sudo vim /etc/ssh/sshd_config` |

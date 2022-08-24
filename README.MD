@@ -105,3 +105,6 @@
 | Để xem danh sách múi giờ | `sudo timedatectl list-timezones` |
 | Thay đổi timezone | `sudo timedatectl set-timezone Asia/Ho_Chi_Minh` |
 
+# Các lỗi đã xảy ra trong quá trình cài đặt
+
+<img src="[link_anh_cua_ban](https://imgur.com/rLEw1VV)">

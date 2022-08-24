@@ -2,7 +2,7 @@
 
 ## Mục lục
 
-### XI.Các lỗi đã xảy ra trong quá trình cài đặt
+# XI.Các lỗi đã xảy ra trong quá trình cài đặt
 
 ## I.Đổi port trên SSH 22 -> 2022
 

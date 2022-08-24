@@ -10,17 +10,15 @@
 
 ## II.Chuyển đổi xác thực SSH bằng Key thay cho mật khẩu
 
-###  1.Dùng lệnh dưới để tạo key rsa
+| Dùng lệnh dưới để tạo key rsa | `sudo ssh-keygen -t rsa` |
+|-------------------------------|--------------------------|
+| Hệ thống sẽ hỏi nơi Lưu key | Điền đường dẫn hoặc Nhấn enter để lưu theo mặc định |
 
-`sudo ssh-keygen -t rsa`
+| Hệ thống sẽ yêu cầu nhập Passphase | Nhấn enter để rỗng |
 
-###  2.Hệ thống sẽ hỏi nơi Lưu key điền đường dẫn lưu hoặc Nhấn enter để lưu theo mặc định
+| Sau đó hệ thống sẽ sinh ra 2 key trên hệ thống: | Private Key và Public Key |
 
-###  3.Hệ thống sẽ yêu cầu nhập Passphase .Nhấn enter để rỗng
-
-###  4.Sau đó hệ thống sẽ sinh ra 2 key trên hệ thống là Private Key và Public Key:
-
-###  5.Trên máy mình 2 key đó sẽ nằm trong mục /root/ .ssh/id_rsa. Nhớ lưu lại 2 key này để sử dụng
+| Trên máy mình 2 key đó sẽ nằm trong mục /root/ .ssh/id_rsa | Nhớ lưu lại 2 key này để sử dụng |
 
 ###  6.Private Key chứa trong file ~/.ssh/id_rsa và Public Key chứa trong file ~/.ssh/id_rsa.pub
 

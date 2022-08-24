@@ -66,7 +66,7 @@
 
 # Tạo 1 Virtualmin Server:
 
-| Chọn Create Server để tạo mới Virtual Server|     |
+| Chọn Create Server để tạo mới Virtual Server|   |
 |---------------------------------------------|---|
 | Domain name | nhập vào tên miền đã được trỏ IP về VPS |
 | Administration passwords | Nhập mật khẩu đã tạo với MySQL |
@@ -89,7 +89,7 @@
 | Đóng cổng ||`sudo ufw deny 80/tcp` |
 | Cho phép IP truy cập đến cổng nhất định | `sudo ufw allow from 192.168.0.1 to any port 22` |
 | Từ chối IP truy cập đến cổng nhất định | `sudo ufw deny from 192.168.0.1 to any port 22` |
-| Hiện các rule đã set up theo danh sách | `sudo ufw status numbered' |
+| Hiện các rule đã set up theo danh sách | `sudo ufw status numbered`|
 | Xóa 1 rule |`sudo ufw delete 7` |
 | Mở cổng theo phạm vi | `sudo ufw allow 35000:35999/tcp` |
 | Đóng cổng theo phạm vi |`sudo ufw deny 35000:35999/tcp` |

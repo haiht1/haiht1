@@ -38,9 +38,10 @@
 |---------------------|-------------------|
 | Để có thể thực thi lệnh wget.Nhập lệnh sau để cài |`sudo apt install wget` |
 | Lệnh để tải Script Vitualmin | `sudo wget wget http://software.virtualmin.com/gpl/scripts/install.sh` |
+| Ubutu 22.04 TLS | `sudo wget wget https://raw.githubusercontent.com/virtualmin/virtualmin-install/d7fcb4ea35b5545417a38b7af4c4d97dbe45d591/virtualmin-install.sh` |
 |Lệnh đặt hostname cho Vituralmin | `sudo hostnamectl set-hostname haiht.tk` |
-|Gán quyền thực thi cho tệp install.sh | `sudo chmod a+x install.sh`|
-| Cài đặt Webmin và Virtual | `sudo ./install.sh` |
+|Gán quyền thực thi cho tệp install.sh | `sudo chmod a+x install.sh` `sudo chmod a+x virtualmin-install.sh`|
+| Cài đặt Webmin và Virtual | `sudo ./install.sh` `sudo ./virtualmin-install.sh`|
 | Hệ thống sẽ hỏi bạn | Nhập y 2 lần |
 
 ## VI.Cấu hình Vituralmin
